@@ -6,44 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
+
+    <LinearLayout
+        android:id="@+id/layaout_materias"
+        android:layout_width="358dp"
+        android:layout_height="686dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
     <TextView
-        android:id="@+id/textAnimacion"
+        android:id="@+id/titulo_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:text="Animacion"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageAnim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        />
 
     <ImageView
-        android:id="@+id/imageAnim"
-        android:layout_width="150pt"
-        android:layout_height="100pt"
-        android:layout_marginBottom="368dp"
-        android:adjustViewBounds="false"
-        app:barrierAllowsGoneWidgets="false"
-        app:chainUseRtl="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/animacion" />
+        android:id="@+id/imagen_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/animacion"
+        android:contentDescription="@string/imagen_animacion" />
 
     <TextView
-        android:id="@+id/textAnim"
-        android:layout_width="363dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="68dp"
-        android:text="Esta materia esta pensada para personas interesadas en los principios de la animacion, podran conocer la importancion de personaje, el manejo del espacio, el uso de la barra de tiempo, todo de una forma super practica y metodica"
+        android:id="@+id/texto_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_animacion_completo"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageAnim"
         app:layout_constraintVertical_bias="0.471" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

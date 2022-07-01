@@ -6,84 +6,103 @@
     android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Consultor de Materias"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <LinearLayout
+        android:id="@+id/layaout_materias"
+        android:layout_width="358dp"
+        android:layout_height="686dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100pt"
-        android:layout_height="50pt"
-        android:adjustViewBounds="false"
-        app:barrierAllowsGoneWidgets="false"
-        app:chainUseRtl="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/animacion"
-        tools:layout_editor_absoluteY="126dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Animacion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="79dp" />
+        <TextView
+            android:id="@+id/consultor_materias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/titulo_consultor"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100pt"
-        android:layout_height="50pt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/_24_original"
-        tools:layout_editor_absoluteY="449dp" />
+        <ImageView
+            android:id="@+id/image_animacion"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/animacion"
+            android:contentDescription="@string/imagen_animacion"
+            tools:layout_editor_absoluteY="126dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Visuals Efects"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp" />
+        <TextView
+            android:id="@+id/Animacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/titulo_animacion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:backgroundTintMode="add"
-        android:text="Esta materia esta pensada para personas interesadas en los principios de la animacion, podran conocer la importancion de personaje, el manejo del espacio, el uso de la barra de tiempo...ver mas"
-        android:textAlignment="center"
-        android:textColor="#009688"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="249dp" />
+        <Button
+            android:id="@+id/btn_animacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:text="@string/texto_animacion"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:onClick="selection"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:backgroundTintMode="add"
-        android:text="Esta materia esta pensada para personas interesadas en los principios de los efectos especiales, podran conocer la importancia de las capas, el uso de las particulas en el cine, las fuentes de luz..ver mas"
-        android:textAlignment="center"
-        android:textColor="#009688"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="577dp" />
+        <ImageView
+            android:id="@+id/image_vfx"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/_24_original"
+            android:contentDescription="@string/imagen_vfx"
+            tools:layout_editor_absoluteY="449dp" />
+
+        <TextView
+            android:id="@+id/vfx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/titulo_vfx"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_vfx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+            android:text="@string/texto_vfx"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:onClick="selection"/>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

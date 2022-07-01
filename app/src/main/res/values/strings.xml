@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ConsultorMaterias_José_Gilabert_Camilo_Alzate</string>
+    <string name="titulo_animacion">AnimaciÓn</string>
+    <string name="texto_animacion">Esta es una materia para aspirantes en el mundo de la animación...Ver mas</string>
+    <string name="texto_animacion_completo">Esta materia esta pensada para personas interesadas en los principios de la animaciÓn, podran conocer la importanciÓn de personaje, el manejo del espacio, el uso de la barra de tiempo, todo de una forma super practica.</string>
+    <string name="titulo_vfx">Visuals Efects</string>
+    <string name="texto_vfx">Esta materia esta pensada para personas interesadas en los efectos especiales..ver mas</string>
+    <string name="texto_vfx_completo">Esta materia esta pensada para personas interesadas en los efectos especiales, iluminación, construccción de escenas, composición, efectos de particulas, edición de imagen y demas pequeños trucos del cine actual.</string>
+    <string name="titulo_consultor">Consultor de Materias</string>
+    <string name="imagen_animacion">imagen de la carrera de animación</string>
+    <string name="imagen_vfx">imagen de la carrera de vfx</string>
 </resources>
